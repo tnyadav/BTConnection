@@ -91,7 +91,7 @@ public class ClientSocketActivity  extends Activity
 
 		IBluetooth ib = getIBluetooth();
 		try {
-			byte[] pinBytes = new String("0000").getBytes();
+			byte[] pinBytes = new String("12345").getBytes();
 			ib.setPin(device.getAddress(), pinBytes);
 			ib.createBond(device.getAddress());
 		} catch (RemoteException e) {
